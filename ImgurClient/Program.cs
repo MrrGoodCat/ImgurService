@@ -13,11 +13,12 @@ namespace ImgurClient
         static void Main(string[] args)
         {
             IImgurService ImgService = new ImgurServiceClient();
-            for (int i = 0; i < 10; i++)
-            {
-                Thread.Sleep(500);
-                Console.WriteLine(ImgService.DoWork());
-            }
+            System.Diagnostics.Process.Start(ImgService.DoWork()); 
+
+                
+            Console.WriteLine("ok...");
+            //Console.WriteLine(ImgService.DoWork());
+
             
 
             Console.ReadLine();

@@ -12,6 +12,8 @@ namespace ImgurService
     {
         static void Main(string[] args)
         {
+            ImgurAPI imgurApi = new ImgurAPI();
+            //imgurApi.GetGallery();
             try
             {
                 Console.WriteLine("Creating service host");

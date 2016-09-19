@@ -12,7 +12,8 @@ namespace ImgurService
     {
         public string DoWork()
         {
-            return "I have hacked Imgur";
+            //System.Diagnostics.Process.Start(imgurApi.links[0]);
+            return ImgurAPI.links.First();
         }
     }
 }
