@@ -13,7 +13,7 @@ namespace ImgurService
         public string DoWork()
         {
             //System.Diagnostics.Process.Start(imgurApi.links[0]);
-            return ImgurAPI.links.First();
+            return ImgurAPI.GetedImages.First().Link;
         }
     }
 }
