@@ -13,5 +13,8 @@ namespace ImgurService
     {
         [OperationContract]
         string DoWork();
+
+        [OperationContract]
+        string[] GetTopImages(int count);        
     }
 }

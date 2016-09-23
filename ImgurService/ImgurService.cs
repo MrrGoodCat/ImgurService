@@ -15,5 +15,10 @@ namespace ImgurService
             //System.Diagnostics.Process.Start(imgurApi.links[0]);
             return ImgurAPI.GetedImages.First().Link;
         }
+
+        public string[] GetTopImages(int count)
+        {
+            return null;
+        }
     }
 }

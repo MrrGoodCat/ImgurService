@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="APIResponses\Image.cs" />
+    <Compile Include="Data.cs" />
     <Compile Include="IImgurService.cs" />
     <Compile Include="ImgurAPI.cs" />
     <Compile Include="Program.cs" />

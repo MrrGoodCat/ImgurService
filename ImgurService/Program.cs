@@ -5,6 +5,8 @@ using System.ServiceModel;
 using System.ServiceModel.Description;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
+
 
 namespace ImgurService
 {
@@ -13,6 +15,7 @@ namespace ImgurService
         static void Main(string[] args)
         {
             ImgurAPI imgurApi = new ImgurAPI();
+            Data data = new Data();
             //imgurApi.GetGallery();
             try
             {
@@ -31,14 +34,26 @@ namespace ImgurService
                 //serviceHost.AddServiceEndpoint(typeof(IImgurService), basicHttp, "http://localhost:8585/ImgurService");
                 //Console.WriteLine("Try to start service");
                 serviceHost.Open();
+                Thread.Sleep(60000);
                 Console.WriteLine("Service started. Press enter to close!");
+                foreach (var item in imgurApi.Galerys)
+                {
+                    Console.WriteLine(item.ImagesCount);
+                }
+                Console.WriteLine("Albums count is: {0}",imgurApi.Galerys.Count);
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Error: {0}", ex);
             }
 
+
             Console.ReadLine();
+        }
+
+        static async void ShowAlbums()
+        {
+
         }
     }
 }
