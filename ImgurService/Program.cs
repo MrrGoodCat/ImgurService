@@ -36,11 +36,11 @@ namespace ImgurService
                 serviceHost.Open();
                 Thread.Sleep(60000);
                 Console.WriteLine("Service started. Press enter to close!");
-                foreach (var item in imgurApi.Galerys)
+                foreach (var item in imgurApi.Albums)
                 {
                     Console.WriteLine(item.ImagesCount);
                 }
-                Console.WriteLine("Albums count is: {0}",imgurApi.Galerys.Count);
+                Console.WriteLine("Albums count is: {0}",imgurApi.Albums.Count);
             }
             catch (Exception ex)
             {

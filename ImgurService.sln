@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImgurService", "ImgurServic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImgurClient", "ImgurClient\ImgurClient.csproj", "{3836BAE1-4937-48B7-93EB-25D0C78896D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Json", "Json\Json.csproj", "{FA52D936-A4A9-4AD8-BDC7-6DA042075ECB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3836BAE1-4937-48B7-93EB-25D0C78896D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3836BAE1-4937-48B7-93EB-25D0C78896D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3836BAE1-4937-48B7-93EB-25D0C78896D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA52D936-A4A9-4AD8-BDC7-6DA042075ECB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA52D936-A4A9-4AD8-BDC7-6DA042075ECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA52D936-A4A9-4AD8-BDC7-6DA042075ECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA52D936-A4A9-4AD8-BDC7-6DA042075ECB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

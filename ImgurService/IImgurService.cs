@@ -15,6 +15,15 @@ namespace ImgurService
         string DoWork();
 
         [OperationContract]
-        string[] GetTopImages(int count);        
+        string[] GetTopImages(int count);
+
+        [OperationContract]
+        string GetAlbumById(string albumId);
+
+        [OperationContract]
+        string[] GetAllAlbums();
+
+        [OperationContract]
+        string[] GetAllImagesFromAlbum(string albumId);
     }
 }
