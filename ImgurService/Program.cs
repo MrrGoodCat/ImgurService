@@ -34,7 +34,7 @@ namespace ImgurService
                 //serviceHost.AddServiceEndpoint(typeof(IImgurService), basicHttp, "http://localhost:8585/ImgurService");
                 //Console.WriteLine("Try to start service");
                 serviceHost.Open();
-                Thread.Sleep(60000);
+                //Thread.Sleep(60000);
                 Console.WriteLine("Service started. Press enter to close!");
                 foreach (var item in imgurApi.Albums)
                 {
